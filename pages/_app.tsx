@@ -1,7 +1,7 @@
 import '../styles/app.scss';
 
-function Sample({ Component, pageProps }) {
-  return <Component {...pageProps} />;
-}
+import { appWithTranslation } from 'next-i18next';
 
-export default Sample;
+const Sample = ({ Component, pageProps }) => <Component {...pageProps} />;
+
+export default appWithTranslation(Sample);

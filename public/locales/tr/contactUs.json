@@ -1,0 +1,9 @@
+{
+  "country": "Ülke",
+  "textValidator": "Yazı en az {count} karakter uzunluğunda olmalıdır.",
+  "text": "Yazı",
+  "phoneValidator": "Telefon numarası +905301231232 şeklinde olmalıdır.",
+  "phone": "Telefon Numarası",
+  "send": "Gönder",
+  "success": "Mesajınız başarıyla gönderildi. {count} saniye içerisinde anasayfaya yönlendirileceksiniz."
+}

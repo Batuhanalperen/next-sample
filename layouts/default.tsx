@@ -1,4 +1,6 @@
+import { useTranslation } from 'next-i18next';
 import Head from 'next/head';
+import Footer from '../components/Footer';
 
 interface Props {
   children: JSX.Element;
@@ -6,10 +8,14 @@ interface Props {
 }
 
 export default function Default({ children, title }: Props) {
+  const { t } = useTranslation('common');
+
   return (
     <div>
       <Head>
-        <title>{title} | Sample</title>
+        <title>
+          {title} - {t('app_name')}
+        </title>
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
@@ -21,6 +27,7 @@ export default function Default({ children, title }: Props) {
         />
       </Head>
       <div className="container">{children}</div>
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,8 @@
+{
+  "name": "Name",
+  "email": "E-mail",
+  "password": "Password",
+  "required": "{name} is required.",
+  "passValidator": "The password must be eight characters or longer",
+  "mailValidator": "E-mail must be valid."
+}

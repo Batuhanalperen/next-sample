@@ -1,0 +1,9 @@
+{
+  "country": "Country",
+  "textValidator": "Text must be at least {count} characters.",
+  "text": "Text",
+  "phoneValidator": "Phone number must be in +905301231232 format.",
+  "phone": "Phone Number",
+  "send": "Send",
+  "success": "Your message was sent successfully. You will be redirected to the homepage in {count} seconds."
+}
