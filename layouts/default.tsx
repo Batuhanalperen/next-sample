@@ -1,4 +1,5 @@
 import { useTranslation } from 'next-i18next';
+import styles from '../styles/modules/Main.module.scss';
 import Head from 'next/head';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
@@ -12,7 +13,7 @@ export default function Default({ children, title }: Props) {
   const { t } = useTranslation('common');
 
   return (
-    <div>
+    <div className={styles.wrapper}>
       <Head>
         <title>
           {title} - {t('app_name')}
@@ -28,7 +29,7 @@ export default function Default({ children, title }: Props) {
         />
       </Head>
       <Nav />
-      <div className="container">{children}</div>
+      <div className={`container ${styles.main}`}>{children}</div>
       <Footer />
     </div>
   );
