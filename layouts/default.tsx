@@ -1,5 +1,6 @@
 import { useTranslation } from 'next-i18next';
 import Head from 'next/head';
+import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 
 interface Props {
@@ -26,6 +27,7 @@ export default function Default({ children, title }: Props) {
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
         />
       </Head>
+      <Nav />
       <div className="container">{children}</div>
       <Footer />
     </div>
