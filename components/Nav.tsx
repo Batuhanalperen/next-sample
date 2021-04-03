@@ -2,10 +2,14 @@ import styles from '../styles/modules/Nav.module.scss';
 import Logo from './Logo';
 import Menu from './Menu';
 
-export default function Nav() {
+interface Props {
+  title: string;
+}
+
+export default function Nav({ title }: Props) {
   return (
     <div className={styles.nav}>
-      <Logo />
+      <Logo title={title} />
       <Menu />
     </div>
   );
