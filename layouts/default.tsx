@@ -10,13 +10,13 @@ interface Props {
 }
 
 export default function Default({ children, title }: Props) {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation(['common', 'menu']);
 
   return (
     <div className={styles.wrapper}>
       <Head>
         <title>
-          {title} - {t('app_name')}
+          {t(`menu:${title}`)} - {t('common:app_name')}
         </title>
         <link rel="icon" href="/favicon.ico" />
         <link
@@ -28,7 +28,7 @@ export default function Default({ children, title }: Props) {
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
         />
       </Head>
-      <Nav />
+      <Nav title={title} />
       <div className={`container ${styles.main}`}>{children}</div>
       <Footer />
     </div>

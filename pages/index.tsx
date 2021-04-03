@@ -6,7 +6,7 @@ export default function Home() {
   const { t } = useTranslation(['homepage', 'menu']);
 
   return (
-    <Layout title={t('menu:homepage')}>
+    <Layout title="homepage">
       <>
         <h1> {t('menu:homepage')} </h1>
         <p> {t('homepage:p')} </p>
